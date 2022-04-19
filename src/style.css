@@ -1,0 +1,241 @@
+body{
+	background: lightgray;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+table{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+	width: 100%;
+	overflow-y: scroll;
+	max-height: 300px;
+	background: white;
+}
+
+td{
+	height: 30px;
+	width: 250px;
+	border-collapse: collapse;
+	padding-left: 30px;
+	margin:0;
+
+	border-bottom: 1px solid lightgray;
+}
+
+.hidden{
+	display: none;
+}
+
+.input-section{
+	font-family: "Roboto", sans-serif;
+	background: white;
+	width: 44%;
+	display: flex;
+	flex-direction: column;
+
+	padding: 30px 30px;
+
+	border-radius: 20px;
+}
+
+.forembr{
+	display: flex;
+	justify-content: space-between;
+}
+
+.result-solve{
+	font-family: "Roboto", sans-serif;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	width: 44%;
+	padding: 30px 30px;
+	border-radius: 20px;
+}
+
+.result-display{
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	justify-content: space-between;
+}
+
+.label-forResults{
+	color: gray;
+}
+
+.result-display-main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.result-display-main p{
+	margin:0;
+}
+
+.result-display-main .label-forResults{
+	margin:0;
+	order: 1;
+}
+
+.esh-plat{
+	font-size: 1.5em;
+}
+
+.header{
+	align-self: center; 
+}
+
+.percent{
+	font-size: 16px;
+	width: 100%;
+	height: 30px;
+}
+
+.credit{
+	font-size: 16px;
+	width: 100%;
+	height: 30px;
+}
+
+.period-of-credit{
+	font-size: 16px;
+	width: 101.5%;
+	height: 30px;
+}
+
+.sovle{
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 36px;
+	background: transparent;
+	border: 4px solid orange;
+	color: black;
+	align-self: center; 
+	height: 50px;
+	width: 40%;
+	transition: 0.3s;
+}
+
+.sovle:hover{
+	background: orange;
+	color: white;
+}
+
+.open-table{
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 45px;
+	background: transparent;
+	border: 4px solid navy;
+	color: navy;
+	align-self: center; 
+	height: 50px;
+	width: 60%;
+	transition: 0.3s;
+}
+
+.open-table:hover{
+	background: navy;
+	color: white;
+}
+
+.section-table{
+	margin-top: 15px;
+}
+
+.header-table{
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	background: skyblue;
+	margin:0;
+	display: flex;
+	height: 40px;
+
+	border-bottom: 2px solid blue;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.header-title1{
+	margin-left: 32px;
+}
+
+.header-title2{
+	margin-left: 46px;
+}
+
+.header-table div{
+	width:15%;
+}
+
+.header-title3{
+	margin-left: 60px;
+}
+
+.header-title4{
+	margin-left: 55px;
+}
+
+.header-title5{
+	margin-left: 55px;
+}
+
+.header-table div p{
+	margin-top: 12%;
+	line-height: 0;
+}
+
+.footer-table{
+	display: flex;
+	background: white;
+	height: 80px;
+	margin:0;
+	font-family: "Roboto", sans-serif;
+	border-radius: 0px 0px 10px 10px;
+	border-top: 2px solid gray;
+}
+
+.itog{
+	margin-left: 30px;
+	flex-basis: 39%;
+}
+
+.footer-title1{
+	margin-left:1px;
+}
+
+.footer-title2{
+	margin-left: 88px;
+}
+
+.footer-title3{
+	margin-left: 146px;
+}
+
+.title-foot{
+	font-size: 14px;
+	color: gray;
+}
+
+.footer-sum-credit{
+	line-height: 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.footer-credit{
+	line-height: 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.footer-perc{
+	line-height: 0;
+	font-size: 20px;
+	font-weight: 500;
+}

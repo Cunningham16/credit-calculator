@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Кредитный калькулятор</title>
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="forembr">
+		<section class="input-section">
+		<div>
+		<p>Сумма кредита</p>
+		<input type="text" class="credit" value="10000">
+	</div>
+	<div>
+		<p>Ставка кредита, %</p>
+		<input type="text" class="percent" value="19">
+	</div>
+	<div>
+		<p>Срок кредита</p>
+		<select name="" id="period" class="period-of-credit">
+			<option value="3">3 месяца</option>
+			<option value="6">6 месяцев</option>
+			<option value="9">9 месяцев</option>
+			<option value="12">1 год</option>
+			<option value="24">2 года</option>
+			<option value="36" selected="selected">3 года</option>
+			<option value="48">4 года</option>
+			<option value="60">5 лет</option>
+			<option value="72">6 лет</option>
+			<option value="84">7 лет</option>
+		</select>
+	</div>
+
+	<div>
+		<p>Вид платежа</p>
+		<input class="annuit" type="radio" checked="checked">Аннуитетный
+		<input class="diff" type="radio">Дифференцированный
+	</div>
+
+	<button class="sovle">Провести расчеты</button>
+	</section>
+	<section class="result-solve">
+		<div class="header">
+			<h3>Расчет по кредиту</h3>
+		</div>
+		<div class="result-display-main">
+			<p class="label-forResults">Ежемесячный платеж</p>
+			<p class="esh-plat"></p>
+		</div>
+		<div class="result-display">
+			<p class="label-forResults">Сумма кредита</p>
+			<p class="credit-dan" id="credit-dan"></p>
+		</div>
+		<div class="result-display">
+			<p class="label-forResults">Переплата</p>
+			<p class="credit-pereplata" id="credit-pereplata"></p>
+		</div>
+		<div class="result-display">
+			<p class="label-forResults">Общая сумма выплат</p>
+			<p class="credit-sum" id="credit-sum"></p>
+		</div>
+		<div class="result-display">
+			<p class="label-forResults">Процент переплат</p>
+			<p class="percent-pere"></p>
+		</div>
+		<button class="open-table">Показать расчеты в таблице</button>
+	</section>
+	</section>
+
+	<section class="section-table hidden">
+		<h2>Расчет по месяцам</h2>
+		<div class="header-table">
+			<div class="header-title1">
+				<p>Месяц оплаты</p>
+			</div>
+			<div class="header-title2">
+				<p>Оставшийся кредит</p>
+			</div>
+			<div class="header-title3"><p>Проценты по кредиту</p></div>
+			<div class="header-title4"><p>Выплата долга</p></div>
+			<div class="header-title5"><p>Ежемесячная выплата</p></div>
+		</div>
+		<table class="table-credit hidden">
+			
+		</table>
+		<div class="footer-table">
+			<h3 class="itog">Итого</h3>
+			<div class="footer-title1">
+				<p class="title-foot">Проценты по кредиту</p>
+				<p class="footer-perc"></p>
+			</div>
+			<div class="footer-title2">
+				<p class="title-foot">Сумма долга</p>
+				<p class="footer-credit"></p>
+			</div>
+			<div class="footer-title3">
+				<p class="title-foot">Всего выплачено</p>
+				<p class="footer-sum-credit"></p>
+			</div>
+		</div>
+	</section>
+	<script src="src/index.js"></script>
+</body>
+</html>
